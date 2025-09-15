@@ -20,6 +20,35 @@ This roadmap outlines the development phases for SlideBot, a React-based chatbot
     - Basic folder structure established
     - Development and build scripts working
 
+#### Epic: Basic Chatbot Interface
+- **SB-001A**: As a presenter, I want a basic chat interface so that I can interact with my presentation assistant
+  - **Acceptance Criteria**:
+    - Chat panel component with input field and send button
+    - Message history display with presenter and bot messages
+    - Basic styling consistent with application design
+    - Keyboard support (Enter to send message)
+
+- **SB-001B**: As a presenter, I want to start a conversation with the chatbot so that I can begin interactive presentation control
+  - **Acceptance Criteria**:
+    - Welcome message displayed when chat interface loads
+    - Basic greeting responses from chatbot
+    - Help command to show available functionality
+    - Clear indication of chatbot readiness state
+
+- **SB-001C**: As a presenter, I want basic presentation navigation commands so that I can control slides through chat
+  - **Acceptance Criteria**:
+    - "next slide" command advances to next slide
+    - "previous slide" command goes back one slide
+    - "go to slide [number]" jumps to specific slide
+    - Error handling for invalid slide numbers
+
+- **SB-001D**: As a presenter, I want the chatbot to understand my current presentation context so that it can provide relevant responses
+  - **Acceptance Criteria**:
+    - Chatbot knows current slide number and total slides
+    - Can reference current slide content in responses
+    - Maintains context throughout the conversation
+    - Shows current slide information when requested
+
 #### Epic: Markdown Processing
 - **SB-002**: As a presenter, I want to load a local Markdown file so that I can use it as my presentation source
   - **Acceptance Criteria**:
